@@ -7,8 +7,8 @@ import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://isierraprofile.netlify.app/',
-  integrations: [mdx(), sitemap(), react()],
-  output: "server",
-  adapter: netlify()
+    site: 'https://isierraprofile.netlify.app/',
+    integrations: [mdx(), sitemap(), react()],
+    output: "server",
+    adapter: netlify()
 });

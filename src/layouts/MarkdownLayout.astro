@@ -1,0 +1,21 @@
+---
+import type { MarkdownLayoutProps } from 'astro';
+import SiteLayout from './SiteLayout.astro';
+
+type Props = MarkdownLayoutProps<{
+  title: string;
+  description: string;
+  image?: string;
+}>;
+
+const { frontmatter, url } = Astro.props;
+---
+<SiteLayout
+    title={frontmatter.title}
+    description={frontmatter.description}
+    image={frontmatter.image}>
+    <h1>{frontmatter.title}</h1>
+    <sub>{frontmatter.description}</sub>
+
+    <slot />
+</SiteLayout>
