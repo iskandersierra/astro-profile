@@ -1,1 +1,1 @@
-export * from './dateSorter';
+export * from './sorters';
